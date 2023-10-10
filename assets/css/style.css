@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.box {
+    height: 250px;
+    width: 250px;
+    background-color: purple;
+    border-radius:15px;
+}
+
+.box1 {
+    height: 250px;
+    width: 250px;
+    background-color: purple;
+    border-radius:15px;
+}
+
+.box>div {
+    height: 100%;
+    cursor: pointer;
+    border-radius:15px;
+}
+
+/* when box1 is hovered make box2 pink */
+body:has(#div1:hover) #div2 {
+    background-color: palevioletred;
+}
+
+/* when div2 is hovered make div1 pink*/
+body:has(#div2:hover) #div1 {
+    background: palevioletred;
+}
