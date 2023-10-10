@@ -10,28 +10,46 @@
     height: 250px;
     width: 250px;
     background-color: purple;
-    border-radius:15px;
+    border-radius: 15px;
 }
 
 .box1 {
     height: 250px;
     width: 250px;
     background-color: purple;
-    border-radius:15px;
+    border-radius: 15px;
+}
+
+.small_box {
+    height: 100px;
+    width: 100px;
+    background-color: palevioletred;
+    border-radius: 15px;
+}
+
+.mt_65 {
+    margin-top: 65px;
 }
 
 .box>div {
     height: 100%;
     cursor: pointer;
-    border-radius:15px;
+    border-radius: 15px;
 }
 
 /* when box1 is hovered make box2 pink */
-body:has(#div1:hover) #div2 {
+/* .common_box:has(#div1:hover) #div2 {
     background-color: palevioletred;
+} */
+
+/* when div2 is hovered make div1 pink */
+.common_box:has(#div2:hover) #div1 {
+    background: palevioletred;
 }
 
-/* when div2 is hovered make div1 pink*/
-body:has(#div2:hover) #div1 {
+/* when div2 is hovered make div1 pink */
+.common_box:has(#div3:hover) #div2 {
     background: palevioletred;
+    height: 250px;
+    width: 250px;
 }
